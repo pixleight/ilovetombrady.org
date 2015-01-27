@@ -585,7 +585,9 @@ header .heavy {
   margin-top: 3em;
   padding-top: 3em;
   border-top: 1px solid #b0b7bc;
-  margin-bottom: 3em;
+  margin-bottom: 1em;
+  padding-bottom: 3em;
+  border-bottom: 1px solid #b0b7bc;
   text-align: center;
 }
 #donate .donate {
