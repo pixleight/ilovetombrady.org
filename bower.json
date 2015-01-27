@@ -1,0 +1,26 @@
+{
+  "name": "ilovetombrady.org",
+  "version": "0.1.0",
+  "homepage": "http://ilovetombrady.org",
+  "authors": [
+    "Chris Violette <cvioletterun@gmail.com>"
+  ],
+  "description": "",
+  "license": "GPL v2.0",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "2.8.2",
+    "jquery": "1.11.1",
+    "respond": "1.4.2",
+    "neat": "1.7.0",
+    "normalize.css": "~3.0.2",
+    "html5shiv": "~3.7.2"
+  },
+  "devDependencies": {}
+}

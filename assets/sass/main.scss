@@ -1,0 +1,119 @@
+@import "normalize";
+@import url(http://fonts.googleapis.com/css?family=Lato:100,300,900);
+@import "../../bower_components/bourbon/app/assets/stylesheets/bourbon";
+
+//@import "settings/neat";
+$visual-grid: false;
+$visual-grid-color: cyan;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.15;
+
+@import "../../bower_components/neat/app/assets/stylesheets/neat";
+
+@import "variables";
+@import "shadows";
+@import "typography";
+
+body {
+	background: #FFF;
+	@include background-image(linear-gradient($color-secondary 0%, #FFF 85%));
+}
+
+a {
+	text-decoration: none;
+	color: $color-primary;
+	&:hover {
+		color: $color-highlight;
+	}
+}
+
+.container {
+	@include outer-container(53.3125em);
+}
+
+.inner {
+	@include span-columns(12);
+}
+
+.blue {
+	color: $color-primary;
+}
+
+.red {
+	color: $color-highlight;
+}
+
+header {
+	text-align: center;
+	h1 {
+		font-weight: 100;
+		text-transform: uppercase;
+		text-shadow: 0 1px 0 rgba(#FFF, 0.75);
+		font-size: 4.625em;
+		line-height: 1;
+		margin: 0.5em 0;
+	}
+
+	.heavy {
+		font-weight: 900;
+	}
+}
+
+#video {
+	iframe {
+		border-top: 12px solid $color-highlight;
+		border-bottom: 12px solid $color-primary;
+		@include shadow-z-3;
+	}
+}
+
+#donate {
+	margin-top: 3em;
+	padding-top: 3em;
+	border-top: 1px solid $color-secondary;
+	margin-bottom: 3em;
+	text-align: center;
+
+	.donate {
+		display: block;
+		margin: 0 auto;
+		font-size: em(36px);
+		font-weight: 300;
+		text-transform: uppercase;
+		text-decoration: none;
+		text-align: center;
+		color: $color-primary;
+		border: 1px solid $color-secondary;
+		width: 10em;
+		@include transition(all 0.1s ease-out);
+
+		&:hover {
+			background: mix($color-secondary, #FFF);
+		}
+	}
+
+	h2 {
+		font-weight: 100;
+		margin: 1em auto;
+		text-transform: uppercase;
+		color: $color-secondary;
+		text-shadow: 0 1px 0 #FFF;
+		strong {
+			font-weight: 900;
+		}
+	}
+}
+
+footer {
+	text-align: center;
+	font-weight: 300;
+	padding: 1em 0;
+
+	a {
+		color: $color-secondary;
+		@include transition(all 0.1s ease-out);
+		&:hover {
+			color: $color-primary;
+		}
+	}
+}
