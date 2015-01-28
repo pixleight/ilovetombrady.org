@@ -503,6 +503,18 @@ a:hover {
   color: #c60c30;
 }
 
+::-moz-selection {
+  color: #b0b7bc;
+  background: #002244;
+  text-shadow: none;
+}
+
+::selection {
+  color: #b0b7bc;
+  background: #002244;
+  text-shadow: none;
+}
+
 .container {
   max-width: 53.3125em;
   margin-left: auto;

@@ -27,6 +27,12 @@ a {
 	}
 }
 
+::selection {
+	color: $color-secondary;
+	background: $color-primary;
+	text-shadow: none;
+}
+
 .container {
 	@include outer-container(53.3125em);
 }
