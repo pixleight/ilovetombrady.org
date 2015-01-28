@@ -602,6 +602,8 @@ header .heavy {
   color: #002244;
   border: 1px solid #b0b7bc;
   width: 10em;
+  background: none;
+  cursor: pointer;
   -webkit-transition: all 0.1s ease-out;
   -o-transition: all 0.1s ease-out;
      transition: all 0.1s ease-out;

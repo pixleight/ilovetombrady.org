@@ -110,6 +110,8 @@ header {
 		color: $color-primary;
 		border: 1px solid $color-secondary;
 		width: 10em;
+		background: none;
+		cursor: pointer;
 		@include transition(all 0.1s ease-out);
 
 		&:hover {
