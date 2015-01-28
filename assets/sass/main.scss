@@ -46,7 +46,7 @@ a {
 header {
 	text-align: center;
 	h1 {
-		font-weight: 100;
+		font-weight: 300;
 		text-transform: uppercase;
 		text-shadow: 0 1px 0 rgba(#FFF, 0.75);
 		font-size: 2em;
@@ -59,6 +59,7 @@ header {
 
 		@include media($screen-sm-min) {
 			font-size: 4em;
+			font-weight: 100;
 		}
 
 		@include media($screen-md-min) {
@@ -121,7 +122,7 @@ header {
 	}
 
 	h2 {
-		font-weight: 100;
+		font-weight: 300;
 		margin: 1em auto;
 		text-transform: uppercase;
 		color: $color-secondary;
@@ -137,6 +138,7 @@ header {
 
 		@include media($screen-sm-min) {
 			font-size: em(32px);
+			font-weight: 100;
 		}
 
 		@include media($screen-md-min) {
